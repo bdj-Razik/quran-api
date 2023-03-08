@@ -3,7 +3,7 @@
 
 This repo contains collection of Quran Translations and to allow development of websites, apps etc, it is structured in REST Architectural. The purpose of this repo is to spread the word of God everywhere in the world
 
-يحتوي هذا الريبو على مجموعة من ترجمات القرآن والسماح بتطوير مواقع الويب والتطبيقات وما إلى ذلك ، وهو منظم في مجال REST المعماري. الغرض من هذا الريبو هو نشر كلمة الله في كل مكان في العالم.
+يحتوي هذا الريبو على مجموعة من ترجمات القرآن والسماح بتطوير مواقع الويب والتطبيقات وما إلى ذلك ، وهو منظم في مجال REST المعماري. الغرض من هذا الريبو هو نشر كلام الله في كل مكان في العالم.
 
 ## Installation
 
