@@ -99,3 +99,24 @@ Install Quran API
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `search`      | `integer` | **Required**. number of ayah |
+
+
+
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/GFTdLy2/Capture-Api.png)
+
+
+## License
+
+[Laravel](https://laravel.com/docs/9.x/)
+
+
+## 🛠 Skills
+Laravel , PHP, L5 Swagger - OpenApi  , MySql , Rest API
+
+
+## Authors
+
+- [@Razik](https://github.com/bdj-Razik)
+
