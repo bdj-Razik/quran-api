@@ -1,0 +1,404 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Quran",
+        "description": "Quran Api",
+        "contact": {
+            "name": "Razik",
+            "email": "razikjob16@gmail.com"
+        },
+        "license": {
+            "name": "Laravel 9",
+            "url": "https://laravel.com/docs/9.x/"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8000/api"
+        }
+    ],
+    "paths": {
+        "/ayat": {
+            "get": {
+                "tags": [
+                    "ayat"
+                ],
+                "summary": "Get all ayat par page",
+                "description": "Return all ayat par page and each page 50 ayat",
+                "operationId": "a995f72f47a7f542e9bb847ad9ee71da",
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Success"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "incorrect url try again",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/IncorrectUrlTryAgain"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "model not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ModelNotFound"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/ayah_name/{ayah}": {
+            "get": {
+                "tags": [
+                    "ayat"
+                ],
+                "summary": "search ayah with search",
+                "description": "Return ayah",
+                "operationId": "93a3d56ccc5a6494870215fb8a9bae78",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/ayah"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Success"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "incorrect url try again",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/IncorrectUrlTryAgain"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "model not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ModelNotFound"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/ayah_number/{numberAyah}": {
+            "get": {
+                "tags": [
+                    "ayat"
+                ],
+                "summary": "search ayah with number",
+                "description": "Return ayah",
+                "operationId": "924f59977251e88bd886537b7f678deb",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/numberAyah"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Success"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "incorrect url try again",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/IncorrectUrlTryAgain"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "model not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ModelNotFound"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/surates": {
+            "get": {
+                "tags": [
+                    "surates"
+                ],
+                "summary": "Get all surates",
+                "description": "Return all surates",
+                "operationId": "fa6694c44a016b5b18aaaa50cbc07bc0",
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Success"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "incorrect url try again",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/IncorrectUrlTryAgain"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "model not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ModelNotFound"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/surah_name/{nameSurah}": {
+            "get": {
+                "tags": [
+                    "surates"
+                ],
+                "summary": "search surah with name",
+                "description": "Return surate",
+                "operationId": "497117a7e4298eeacab63c8a79e7e641",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/nameSurah"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Success"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "incorrect url try again",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/IncorrectUrlTryAgain"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "model not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ModelNotFound"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/surah_number/{numberSurah}": {
+            "get": {
+                "tags": [
+                    "surates"
+                ],
+                "summary": "search surah with number",
+                "description": "Return surate",
+                "operationId": "9becdff33508936d6dc0d51818c3c967",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/numberSurah"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Success"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "incorrect url try again",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/IncorrectUrlTryAgain"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "model not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ModelNotFound"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "id": {
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                },
+                "type": "integer"
+            },
+            "name": {
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "type": "string"
+            },
+            "Success": {
+                "properties": {
+                    "status": {
+                        "description": "status message",
+                        "type": "string",
+                        "example": true
+                    }
+                },
+                "type": "object"
+            },
+            "Failed": {
+                "properties": {
+                    "status": {
+                        "description": "status message",
+                        "type": "string",
+                        "example": false
+                    }
+                },
+                "type": "string"
+            },
+            "ModelNotFound": {
+                "properties": {
+                    "status": {
+                        "description": "status message",
+                        "type": "string",
+                        "example": false
+                    },
+                    "message": {
+                        "description": "error message",
+                        "type": "string",
+                        "example": "Model Not Found"
+                    }
+                },
+                "type": "object"
+            },
+            "IncorrectUrlTryAgain": {
+                "properties": {
+                    "status": {
+                        "description": "status message",
+                        "type": "string",
+                        "example": false
+                    },
+                    "message": {
+                        "description": "error message",
+                        "type": "string",
+                        "example": "Incorrect Url for api"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "parameters": {
+            "numberSurah": {
+                "name": "numberSurah",
+                "in": "path",
+                "description": "number surah",
+                "required": true,
+                "schema": {
+                    "$ref": "#/components/schemas/id"
+                }
+            },
+            "nameSurah": {
+                "name": "nameSurah",
+                "in": "path",
+                "description": "name surah",
+                "required": true,
+                "schema": {
+                    "$ref": "#/components/schemas/name"
+                }
+            },
+            "numberAyah": {
+                "name": "numberAyah",
+                "in": "path",
+                "description": "number ayah",
+                "required": true,
+                "schema": {
+                    "$ref": "#/components/schemas/id"
+                }
+            },
+            "ayah": {
+                "name": "ayah",
+                "in": "path",
+                "description": "ayah",
+                "required": true,
+                "schema": {
+                    "$ref": "#/components/schemas/name"
+                }
+            }
+        }
+    }
+}
