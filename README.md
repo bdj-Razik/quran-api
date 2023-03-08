@@ -68,7 +68,7 @@ Install Quran API
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `search`      | `integer` | **Required**. number of surah|
+| `search`      | `integer` | **Required**. number surah|
 
  
 #### Get all Ayat
@@ -99,7 +99,7 @@ Install Quran API
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `search`      | `integer` | **Required**. number of ayah |
+| `search`      | `integer` | **Required**. number ayah |
 
 
 
