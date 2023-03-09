@@ -5,6 +5,10 @@ This repo contains collection of Quran Translations and to allow development of 
 
 يحتوي هذا الريبو على مجموعة من ترجمات القرآن الكريم والسماح بتطوير مواقع الويب والتطبيقات وما إلى ذلك ، وهو منظم في مجال REST المعماري. الغرض من هذا الريبو هو نشر كلام الله في كل مكان في العالم.
 
+## Source Quran Json
+
+ https://github.com/penggguna/QuranJSON
+
 ## Installation
 
 Install Quran API
