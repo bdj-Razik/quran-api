@@ -45,8 +45,9 @@ Install Quran API
 ```
 
 ```bash
-   php artisan db:seed
+  php artisan db:seed
 ```
+
 
 ```bash
   php artisan serve
