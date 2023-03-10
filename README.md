@@ -21,6 +21,16 @@ Install Quran API
   copy .env.example file to .env on the root folder
 ```
 
+
+```bash 
+  add this variable in file .env
+
+  L5_SWAGGER_GENERATE_ALWAYS = true
+  L5_SWAGGER_CONST_HOST=http://127.0.0.1:8001/api
+```
+
+
+
 ```bash
   composer install
 ```
@@ -31,15 +41,15 @@ Install Quran API
 ```
 
 ```bash
-  run php artisan migrate
+  php artisan migrate
 ```
 
 ```bash
-  run php artisan db:seed
+   php artisan db:seed
 ```
 
 ```bash
-  run php artisan serve
+  php artisan serve
 ```
 
 ```bash
