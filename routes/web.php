@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Resources\Surah\SurahResource;
-use App\Models\Surah;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +14,5 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::get('/', function () {
-
-     
-     return SurahResource::make(Surah::with('ayat')->find(1));
+    return view('welcome');
 });
